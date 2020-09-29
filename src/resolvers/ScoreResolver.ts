@@ -16,8 +16,8 @@ export class ScoreResolver {
   async createScore(
     @Arg('options', () => ScoreInput) options: ScoreInput,
   ) {
-    await Score.insert(options)
-    return true;
+    const score = await Score.create(options).save();
+    return score;
   }
 
   @Query(() => [Score])
