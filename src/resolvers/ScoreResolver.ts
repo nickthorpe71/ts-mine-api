@@ -12,7 +12,7 @@ class ScoreInput {
 
 @Resolver()
 export class ScoreResolver {
-  @Mutation(() => Boolean) // Mutations are generally for updating or making changes to server
+  @Mutation(() => Score) // Mutations are generally for updating or making changes to server
   async createScore(
     @Arg('options', () => ScoreInput) options: ScoreInput,
   ) {
