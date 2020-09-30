@@ -37,6 +37,7 @@ export class ScoreResolver {
     return true;
   }
 
+  // delete
   @Mutation(() => Boolean)
   async deleteScore(
     @Arg('id', () => Int) id: number
