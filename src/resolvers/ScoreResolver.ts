@@ -46,4 +46,3 @@ export class ScoreResolver {
     return true;
   }
 }
-
